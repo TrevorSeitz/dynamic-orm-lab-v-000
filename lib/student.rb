@@ -6,4 +6,4 @@ class Student < InteractiveRecord
 
   attr_accessor id:
 
-# end
+end
