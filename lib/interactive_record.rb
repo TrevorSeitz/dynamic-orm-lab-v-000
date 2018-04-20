@@ -52,7 +52,7 @@ class InteractiveRecord
       DB[:conn].execute(sql)
     end
 
-    def find_by(hash)
+    def self.find_by(hash)
       sql = "SELECT * FROM #{self.table_name} WHERE hash[key] = hash[value]"
       DB[:conn].execute(sql)
     end
