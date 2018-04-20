@@ -11,8 +11,7 @@ class InteractiveRecord
     DB[:conn].results_as_hash = true
     sql = "PRAGMA table_info('#{table_name}')"
 
-    table info = DB[:conn].execute(sql)
-      column_names = []
+    table _mn_names = []
       table_info.each do |row|
         column_names << row["name"]
       end
